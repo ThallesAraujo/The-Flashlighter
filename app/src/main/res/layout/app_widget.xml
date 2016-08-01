@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin" android:background="@android:color/transparent"
+    android:clickable="true">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ib_widget"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="\@" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alterar estado"
+        android:textColor="@android:color/background_light"
+        android:id="@+id/tv_Widget"
+        android:textAlignment="center"
+        android:layout_below="@+id/ib_widget"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:clickable="true" />
+
+</RelativeLayout>

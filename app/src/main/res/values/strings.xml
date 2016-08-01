@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">The Flashlighter</string>
+
+    <string name="action_settings">Sobre...</string>
+    <string name="title_activity_about">Sobre o aplicativo</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>

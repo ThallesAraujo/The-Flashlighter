@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.thalles.theflashlighter.SobreActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@mipmap/ic_lampada"
+                android:id="@+id/imageView_lampadatwo"
+                android:maxHeight="200dp"
+                android:maxWidth="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Flashlighter"
+            android:textSize="20dp"
+            android:id="@+id/tv_appname"
+            android:layout_below="@+id/imageView_lampadatwo"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Desenvolvedor: Thalles Henrique"
+            android:id="@+id/tv_developer"
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_below="@+id/tv_appname"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Graduando no curso de Análise e Desenvolvimento de Sistemas no IFPB Campus Monteiro"
+            android:id="@+id/tv_academicInfo"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/secondary_text_light"
+            android:textIsSelectable="false"
+            android:layout_below="@+id/tv_developer"
+            android:layout_alignStart="@+id/tv_developer"
+            android:layout_alignEnd="@+id/tv_developer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/tv_moreInfo"
+                android:text="Aplicativo de demonstração do padrão de projeto Singleton"
+                android:textAlignment="center"
+                android:textColor="@android:color/secondary_text_light"
+                android:textIsSelectable="false"
+                android:layout_below="@+id/tv_academicInfo"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/tv_academicInfo"
+                android:layout_alignEnd="@+id/tv_academicInfo" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
